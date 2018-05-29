@@ -1,0 +1,23 @@
+<h1>Restaurant</h1>
+<h2>Name: <%= @restaurant.name %></h2>
+<h2>Address: <%= @restaurant.address %></h2>
+<h3>Category: <%= @restaurant.category %></h3>
+<h4>Phone number: <%= @restaurant.phone_number %></h4>
+<h4>Reviews: <%= @restaurant.reviews %></h4>
+<%= link_to "Back to list", '/restaurants', class: "btn btn-primary"%>
+
+<br>
+<%= simple_form_for [@restaurant, @review] do |r| %>
+	<%= r.input :content %>
+	<%= r.input :rating %>
+	<%= r.button :submit %>
+<% end %>
+ 
+<% @restaurant.reviews.each do |r| %>
+<ul>
+	<li>
+	<%= r.content %>
+	<%= r.rating %>
+	</li>
+</ul>
+<% end %>

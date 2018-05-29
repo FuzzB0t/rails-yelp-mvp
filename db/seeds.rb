@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+Restaurant.create({name: Faker::ElderScrolls.region, address: Faker::RickAndMorty.location, phone_number: Faker::PhoneNumber.cell_phone, category: "chinese"})
+Restaurant.create({name: Faker::ElderScrolls.region, address: Faker::RickAndMorty.location, phone_number: Faker::PhoneNumber.cell_phone, category: "chinese"})
+Restaurant.create({name: Faker::ElderScrolls.region, address: Faker::RickAndMorty.location, phone_number: Faker::PhoneNumber.cell_phone, category: "chinese"})
+Restaurant.create({name: Faker::ElderScrolls.region, address: Faker::RickAndMorty.location, phone_number: Faker::PhoneNumber.cell_phone, category: "chinese"})
+Restaurant.create({name: Faker::ElderScrolls.region, address: Faker::RickAndMorty.location, phone_number: Faker::PhoneNumber.cell_phone, category: "chinese"})
+
